@@ -9,9 +9,9 @@ export default function Routers(props) {
   console.log("PROPS", props);
   return (
     <Routes>
-      <Route path="/about" element={<About />} />
+      <Route path="WordCounter/about" element={<About />} />
       <Route
-        path="/"
+        path="/WordCounter/"
         element={
           <Textform
             hadings="Enter text here ...."
