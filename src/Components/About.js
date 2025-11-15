@@ -3,7 +3,7 @@ import React, { useState } from "react";
 export default function About() {
   const [style, setstyle] = useState({});
   const handleDarkMode = () => {
-    if (style.color == "white") {
+    if (style.color === "white") {
       setstyle({
         backgroundColor: "white",
         color: "black",
@@ -23,7 +23,7 @@ export default function About() {
         <div className="d-flex align-items-center justify-content-between my-3">   
         <h1 className="">About Us</h1>
         <button className="btn btn-primary my-4 mb-4" onClick={handleDarkMode}>
-          {style.color == "white" ? "Light Mode" : "Dark Mode"}
+          {style.color === "white" ? "Light Mode" : "Dark Mode"}
         </button>
         </div>
         <div className="accordion" id="accordionExample">
